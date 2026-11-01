@@ -15,6 +15,18 @@ prompt, responde a cinco perguntas e a LLM conduz o resto.
 [![Licença: uso pessoal e não comercial](https://img.shields.io/badge/licen%C3%A7a-uso%20pessoal%20e%20n%C3%A3o%20comercial-f08a66.svg)](LICENSE)
 [![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-f08a66.svg)](CHANGELOG.md)
 
+## Tutorial em vídeo
+
+Veja como instalar a skill, responder à entrevista inicial e acompanhar um teste no OpenCode.
+
+<p align="center">
+  <a href="https://youtu.be/Fsg7kkCIUFY">
+    <img src="assets/tutorial-youtube.jpg" alt="Assistir ao tutorial: PARE DE PAGAR ASSINATURA! Clone seu próprio Studio de Canal Dark" width="800">
+  </a>
+</p>
+
+**[▶ Assistir ao tutorial completo no YouTube](https://youtu.be/Fsg7kkCIUFY)**
+
 ## Instalar em 1 minuto
 
 1. Abra um agente com acesso ao computador (Claude Code, OpenCode ou Codex).
