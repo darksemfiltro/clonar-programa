@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Capa — Clonar Programa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500..800;1,6..72,500..800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#141414; --card:#1b1b1b; --muted:#222; --border:#303030; --border-strong:#4a4a4a;
+    --fg:#f4f2ef; --fg-dim:#a8a8a8; --accent:#f08a66; --accent-strong:#ffad88; --accent-deep:#bb3b25;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1280px;height:640px;background:var(--bg);overflow:hidden}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--fg);position:relative}
+  .grid{position:absolute;inset:0;background-image:
+    linear-gradient(to right,rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:40px 40px;mask-image:radial-gradient(ellipse 80% 90% at 70% 40%,#000 20%,transparent 75%)}
+  .glow{position:absolute;right:-120px;top:-160px;width:760px;height:760px;border-radius:50%;
+    background:radial-gradient(circle,rgba(240,138,102,.26),rgba(240,138,102,0) 65%)}
+  .glow2{position:absolute;left:-200px;bottom:-320px;width:640px;height:640px;border-radius:50%;
+    background:radial-gradient(circle,rgba(187,59,37,.18),rgba(187,59,37,0) 70%)}
+  .wrap{position:absolute;inset:0;padding:48px 64px 44px;display:flex;gap:48px}
+  .left{flex:1.12;display:flex;flex-direction:column;justify-content:space-between}
+  .eyebrow{font:600 15px 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;display:flex;align-items:center;gap:12px}
+  .eyebrow i{display:block;width:34px;height:2px;background:var(--accent)}
+  h1{font-family:Newsreader,Georgia,serif;font-weight:800;font-size:92px;line-height:.95;letter-spacing:-.025em;margin-top:22px}
+  h1 em{font-style:italic;font-weight:600;color:var(--accent)}
+  .sub{font-size:21px;line-height:1.45;color:var(--fg-dim);max-width:560px;margin-top:18px}
+  .sub b{color:var(--fg);font-weight:600}
+  .flow{display:flex;align-items:center;gap:8px;margin-top:24px}
+  .step{font:500 15px 'JetBrains Mono',monospace;border:1px solid var(--border-strong);background:var(--card);padding:9px 14px;border-radius:8px;color:var(--fg)}
+  .step small{color:var(--accent);margin-right:8px;font-size:12px}
+  .arrow{color:var(--accent);font:600 17px 'JetBrains Mono',monospace}
+  .foot{display:flex;align-items:center;gap:12px;font:500 15px 'JetBrains Mono',monospace;color:var(--fg-dim)}
+  .chip{border:1px solid var(--border);padding:6px 12px;border-radius:999px;color:var(--fg);background:rgba(255,255,255,.03)}
+  .chip.hot{border-color:var(--accent);color:var(--accent-strong);background:rgba(240,138,102,.1)}
+  .url{margin-left:auto;color:var(--accent-strong)}
+  .right{flex:.88;display:flex;align-items:center}
+  .term{width:100%;background:var(--card);border:1px solid var(--border-strong);border-radius:14px;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 1px rgba(240,138,102,.08);overflow:hidden}
+  .bar{display:flex;align-items:center;gap:8px;padding:13px 16px;background:#202020;border-bottom:1px solid var(--border)}
+  .dot{width:11px;height:11px;border-radius:50%;background:#3a3a3a}
+  .dot:first-child{background:var(--accent-deep)} .dot:nth-child(2){background:var(--accent)}
+  .bar span{margin-left:10px;font:500 13px 'JetBrains Mono',monospace;color:var(--fg-dim)}
+  pre{font:400 17px/1.7 'JetBrains Mono',monospace;color:#d8d5d0;padding:22px 24px}
+  .c{color:#7d7d7d} .a{color:var(--accent)} .g{color:#9ccf8f} .w{color:var(--fg)}
+  .badge{position:absolute;right:64px;bottom:56px;display:none}
+</style>
+</head>
+<body>
+  <div class="grid"></div><div class="glow"></div><div class="glow2"></div>
+  <div class="wrap">
+    <div class="left">
+      <div>
+        <div class="eyebrow"><i></i>Skill · Dark Sem Filtro</div>
+        <h1>Clonar<br>Programa <em>com método</em></h1>
+        <p class="sub">Para quem não quer começar do zero. Use o <b>REA</b> e o <b>Playwright</b> para transformar um site ou programa desktop em evidência, spec e código seu.</p>
+        <div class="flow">
+          <span class="step"><small>01</small>Evidência</span><span class="arrow">→</span>
+          <span class="step"><small>02</small>Spec</span><span class="arrow">→</span>
+          <span class="step"><small>03</small>Código próprio</span><span class="arrow">→</span>
+          <span class="step"><small>04</small>Paridade</span>
+        </div>
+      </div>
+      <div class="foot">
+        <span class="chip hot">Web</span><span class="chip hot">Desktop</span><span class="chip">REA</span><span class="chip">Playwright</span>
+        <span class="url">darksemfiltro.github.io</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="term">
+        <div class="bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span>clones/meu-clone</span></div>
+<pre><span class="c"># um workspace pronto em 1 comando</span>
+<span class="a">$</span> <span class="w">node scripts/new-clone.mjs</span>
+
+<span class="g">00-intake/</span>        <span class="c">alvo e escopo</span>
+<span class="g">01-evidence/</span>      <span class="c">capturas</span>
+<span class="g">02-rea/</span>           <span class="c">grafos do REA</span>
+<span class="g">03-spec/</span>          <span class="c">arquitetura + plano</span>
+<span class="g">04-build/</span>         <span class="a">seu código</span>
+<span class="g">05-verification/</span>  <span class="c">paridade</span>
+<span class="g">06-delivery/</span>      <span class="c">entrega</span></pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
